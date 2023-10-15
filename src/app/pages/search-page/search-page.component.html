@@ -1,0 +1,12 @@
+<p *ngIf="posts.length == 0">По запросу "{{search_input}}" ничего не найдено</p>
+<div *ngIf="posts.length > 0">
+  <h2>
+    По запросу "{{search_input}}" найдено новостей:
+    <span class="font-bold text-blue-500">{{posts.length}}</span>
+  </h2>
+  <div class="posts_wrap">
+    <app-post-card
+      *ngFor="let post of posts"
+      [post]="post"/>
+  </div>
+</div>

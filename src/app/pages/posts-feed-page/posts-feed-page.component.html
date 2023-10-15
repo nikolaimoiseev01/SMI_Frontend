@@ -1,0 +1,14 @@
+<div class="flex flex-col gap-5">
+  <h1 class="text-3xl font-bold dark:text-slate-200">Лента новостей</h1>
+  <app-select [options]="selectOptions"
+              selectedOption="1"
+              (selectionChanged)="onSelectionChanged($event)"/>
+
+  <app-select [options]="selectOptions2"
+              selectedOption="1"
+              (selectionChanged)="onSelectionChanged($event)"/>
+
+  <app-post-list/>
+
+</div>
+

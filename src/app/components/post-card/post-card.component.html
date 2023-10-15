@@ -1,0 +1,11 @@
+<a routerLink="/post/{{post.id}}">
+  <div class="relative border p-3 rounded post_wrap hover:shadow-lg transition-all">
+    <p class="absolute bg-amber-50 px-3 py-1 rounded-2xl top-4 right-4">{{post.post_topic.name}}</p>
+    <img [src]="post.cover_img" alt="">
+    <h2>{{post.title}}</h2>
+    <div [innerHTML]="post.text.substring(0, 100)">
+    </div>
+
+
+  </div>
+</a>
