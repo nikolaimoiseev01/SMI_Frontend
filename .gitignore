@@ -3,6 +3,7 @@
 # Compiled output
 .angular
 /dist
+/dist/angular_smi
 /tmp
 /out-tsc
 /bazel-out
