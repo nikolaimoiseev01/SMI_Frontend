@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {delay, Observable, retry} from "rxjs";
 import {IPost} from "../interfaces/post";
-import {environment} from "../enviroment";
+// import {environment} from "../enviroment";
 import {IPostTopic} from "../interfaces/post-topic";
 
 @Injectable({
@@ -10,8 +10,8 @@ import {IPostTopic} from "../interfaces/post-topic";
 })
 export class PostsService {
 
-  apiBaseUrl = environment.apiBaseUrl;
-
+  // apiBaseUrl = environment.apiBaseUrl;
+  apiBaseUrl = "test";
   constructor(
     private http: HttpClient
   ) {

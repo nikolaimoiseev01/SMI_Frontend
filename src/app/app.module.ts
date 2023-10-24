@@ -17,6 +17,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { PostsFeedPageComponent } from './pages/posts-feed-page/posts-feed-page.component';
 import { SelectComponent } from './components/ui/select/select.component';
+import {environment} from "./enviroment";
 
 @NgModule({
   declarations: [
