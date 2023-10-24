@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {environment} from "../../enviroment";
+import {environment} from '../../enviroment';
 
 @Component({
   selector: 'app-header',
