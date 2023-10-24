@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {IPost} from "../../interfaces/post";
 import {HttpClient} from "@angular/common/http";
-// import {environment} from "../../enviroment";
+import {environment} from "../../enviroment";
 import {IPostTopic} from "../../interfaces/post-topic";
 import {PostsService} from "../../services/posts.service";
 
@@ -11,7 +11,7 @@ import {PostsService} from "../../services/posts.service";
   styleUrls: ['./posts-feed-page.component.scss']
 })
 export class PostsFeedPageComponent implements OnInit {
-  // apiBaseUrl = environment.apiBaseUrl
+  apiBaseUrl = environment.apiBaseUrl
 
   options_post_topics: IPostTopic[] = []
   posts: IPost[] = []
